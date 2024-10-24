@@ -463,7 +463,8 @@ elif tab == "Resume Evaluation":
 
                     st.markdown("### Free YouTube Course Playlists")
                     cols = st.columns(2)
-                    api_key = "AIzaSyBOfYAqPggpYg9PaVy13Thlk1y5hhQnpRE"
+                    
+                    
                     for i, skill in enumerate(response_json['RecommendedSkills']):
                         playlist_url, thumbnail_url = search_youtube_playlists(skill, api_key)
                         with cols[i % 2]:
